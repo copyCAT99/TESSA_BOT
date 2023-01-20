@@ -844,13 +844,16 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
     elif query.data == "start":   
         buttons = [[
-            InlineKeyboardButton('➕ Add Me To Your Groups ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            InlineKeyboardButton('➕ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘs ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
         ], [
-            InlineKeyboardButton('🔍 Search', switch_inline_query_current_chat=''),
-            InlineKeyboardButton('🤖 Updates', url='https://t.me/MatRixBotzTG')
+            InlineKeyboardButton('🎬 ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ', url='https://t.me/+zzwlJDmPbLpjYWI1'),
+            InlineKeyboardButton('📺 ᴄʜᴀɴɴᴇʟ', url='https://t.me/MatRixBotzTG')
         ], [
-            InlineKeyboardButton('ℹ️ Help', callback_data='help2'),
-            InlineKeyboardButton('😊 About', callback_data='about')
+            InlineKeyboardButton('🔍 sᴇᴀʀᴄʜ', switch_inline_query_current_chat=''),
+            InlineKeyboardButton('📼 ᴏᴛʜᴇʀ ʙᴏᴛs', url='https://t.me/SD_BOT_SUPPORT')
+        ], [
+            InlineKeyboardButton('🔰 ʜᴇʟᴘ', callback_data='help2'),
+            InlineKeyboardButton('ᴀʙᴏᴜᴛ 📚', callback_data='about')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
