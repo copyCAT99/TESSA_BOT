@@ -7,7 +7,7 @@ class script(object):
 ‣ ʟɪʙʀᴀʀʏ : ᴘʏʀᴏɢʀᴀᴍ 
 ‣ ʟᴀɴɢᴜᴀɢᴇ : ᴘʏᴛʜᴏɴ 3
 ‣ ᴅᴀᴛᴀ ʙᴀsᴇ : ᴍᴏɴɢᴏ ᴅʙ
-‣ ʙᴏᴛ sᴇʀᴠᴇʀ : href=https://t.me/SD_BOT_SUPPORT>ᴀɴʏᴡʜᴇʀᴇ</a>
+‣ ʙᴏᴛ sᴇʀᴠᴇʀ : <a href=https://t.me/SD_BOT_SUPPORT>ᴀɴʏᴡʜᴇʀᴇ</a>
 ‣ ʙᴜɪʟᴅ sᴛᴀᴛᴜs : ᴠ1.0.1 [ʙᴇᴛᴀ]</b>"""
 
     SOURCE_TXT = """<b>⍟───[ ᴏᴡɴᴇʀ ᴅᴇᴛᴀɪʟꜱ ]───⍟
