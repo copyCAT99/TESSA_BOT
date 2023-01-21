@@ -41,7 +41,7 @@ async def start(client, message):
             InlineKeyboardButton('➕ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘs ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
             InlineKeyboardButton('🎬 ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ', url='https://t.me/+zzwlJDmPbLpjYWI1'),
-            InlineKeyboardButton('📺 ᴄʜᴀɴɴᴇʟ', url='t.me/MatRixBotzTG')
+            InlineKeyboardButton('📺 ᴄʜᴀɴɴᴇʟ', url='https://t.me/+G1pSK1X8YyVmMWI1')
             ],[
             InlineKeyboardButton('🔍 sᴇᴀʀᴄʜ', switch_inline_query_current_chat=''),
             InlineKeyboardButton('📼 ᴏᴛʜᴇʀ ʙᴏᴛs', url='https://t.me/SD_BOT_SUPPORT')
@@ -94,7 +94,7 @@ async def start(client, message):
             InlineKeyboardButton('➕ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘs ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
             InlineKeyboardButton('🎬 ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ', url='https://t.me/+zzwlJDmPbLpjYWI1'),
-            InlineKeyboardButton('📺 ᴄʜᴀɴɴᴇʟ', url='t.me/MatRixBotzTG')
+            InlineKeyboardButton('📺 ᴄʜᴀɴɴᴇʟ', url='https://t.me/+G1pSK1X8YyVmMWI1')
             ],[
             InlineKeyboardButton('🔍 sᴇᴀʀᴄʜ', switch_inline_query_current_chat=''),
             InlineKeyboardButton('📼 ᴏᴛʜᴇʀ ʙᴏᴛs', url='https://t.me/SD_BOT_SUPPORT')
