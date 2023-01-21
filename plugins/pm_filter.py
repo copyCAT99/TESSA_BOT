@@ -850,7 +850,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('📺 ᴄʜᴀɴɴᴇʟ', url='https://t.me/+G1pSK1X8YyVmMWI1')
         ], [
             InlineKeyboardButton('🔍 sᴇᴀʀᴄʜ', switch_inline_query_current_chat=''),
-            InlineKeyboardButton('📼 ᴏᴛʜᴇʀ ʙᴏᴛs', url='https://t.me/SD_BOT_SUPPORT')
+            InlineKeyboardButton('💥 ᴍᴀɪɴ ᴄʜᴀɴɴᴇʟ', url='https://t.me/+sxErd_EqLl9kYzQ1')
         ], [
             InlineKeyboardButton('🔰 ʜᴇʟᴘ', callback_data='help2'),
             InlineKeyboardButton('ᴀʙᴏᴜᴛ 📚', callback_data='about')
@@ -943,7 +943,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "about":
         buttons= [[
             InlineKeyboardButton('🤴 ʙᴏᴛ ᴏᴡɴᴇʀ', callback_data='source'),
-            InlineKeyboardButton('📼 ᴏᴛʜᴇʀ ʙᴏᴛs', url='https://t.me/SD_BOT_SUPPORT')
+            InlineKeyboardButton('💥 ᴍᴀɪɴ ᴄʜᴀɴɴᴇʟ', url='https://t.me/+sxErd_EqLl9kYzQ1')
             ],[
             InlineKeyboardButton('🏠 Home ', callback_data='start'),
             InlineKeyboardButton('Close ⛔️', callback_data='close_data')
