@@ -3,7 +3,7 @@ class script(object):
 
     ABOUT_TXT = """<b>‣ ᴍʏ ɴᴀᴍᴇ : {}
 ‣ ᴄʀᴇᴀᴛᴏʀ : <a href=https://t.me/DQ12335>DQ</a>
-‣ ᴅᴇᴠᴇʟᴏᴘᴇʀ : <a href=https://t.me/SD_BOT_SUPPORT>SD SUPPORT</a>
+‣ ᴅᴇᴠᴇʟᴏᴘᴇʀ : <a href=https://t.me/DQ12335>DQ</a>
 ‣ ʟɪʙʀᴀʀʏ : ᴘʏʀᴏɢʀᴀᴍ 
 ‣ ʟᴀɴɢᴜᴀɢᴇ : ᴘʏᴛʜᴏɴ 3
 ‣ ᴅᴀᴛᴀ ʙᴀsᴇ : ᴍᴏɴɢᴏ ᴅʙ
@@ -31,7 +31,7 @@ class script(object):
 
 <code>/batch https://t.me/DQ12335 https://t.me/DQ12335</code>
 
-𝙲𝚁𝙴𝙳𝙸𝚃𝚂 ›› <a href=https://t.me/SD_BOT_SUPPORT><b>SD BOT SUPPORT</b></a>"""
+𝙲𝚁𝙴𝙳𝙸𝚃𝚂 ›› <a href=https://t.me/DQ12335><b>SD BOT SUPPORT</b></a>"""
     
     MANUELFILTER_TXT = """Help: <b>Filters</b>
 
