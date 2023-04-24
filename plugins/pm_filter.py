@@ -213,15 +213,14 @@ async def next_page(bot, query):
         ]
     btn.insert(0, 
         [
-            InlineKeyboardButton(f'  🎬 {search} 🎬 ', 'qinfo')
+            InlineKeyboardButton(f'  🔍 {search} 🔎 ', 'qinfo')
         ]
     )
     btn.insert(1, 
          [
-             InlineKeyboardButton(f'📮 ɪɴꜰᴏ', 'reqinfo'),
-             InlineKeyboardButton(f'📟 ᴍᴏᴠɪᴇ', 'minfo'),
-             InlineKeyboardButton(f'🔰 sᴇʀɪᴇs', 'sinfo'),
-             InlineKeyboardButton(f'🎁 ᴛɪᴘs', 'tinfo')
+             InlineKeyboardButton(f'📮 𝑰𝒏𝒇𝒐', 'reqinfo'),
+             InlineKeyboardButton(f'📟 𝑴𝒐𝒗𝒊𝒆', 'minfo'),
+             InlineKeyboardButton(f'🔰 𝑻𝒊𝒑𝒔', 'sinfo')            
          ]
     )        
 
@@ -1549,15 +1548,14 @@ async def auto_filter(client, msg, spoll=False):
         ]
     btn.insert(0, 
         [
-            InlineKeyboardButton(f'  🎬 {search}  🎬 ', 'qinfo')
+            InlineKeyboardButton(f'  🔍 {search} 🔎 ', 'qinfo')
         ]
     )
     btn.insert(1, 
          [
-             InlineKeyboardButton(f'📮 ɪɴꜰᴏ', 'reqinfo'),
-             InlineKeyboardButton(f'📟 ᴍᴏᴠɪᴇ', 'minfo'),
-             InlineKeyboardButton(f'🔰 sᴇʀɪᴇs', 'sinfo'),
-             InlineKeyboardButton(f'🎁 ᴛɪᴘs', 'tinfo')
+             InlineKeyboardButton(f'📮 𝑰𝒏𝒇𝒐', 'reqinfo'),
+             InlineKeyboardButton(f'📟 𝑴𝒐𝒗𝒊𝒆', 'minfo'),
+             InlineKeyboardButton(f'🔰 𝑻𝒊𝒑𝒔', 'sinfo')
          ]
     )
 
