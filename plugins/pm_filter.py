@@ -218,9 +218,9 @@ async def next_page(bot, query):
     )
     btn.insert(1, 
          [
-             InlineKeyboardButton(f'📮 𝑰𝒏𝒇𝒐', 'reqinfo'),
-             InlineKeyboardButton(f'📟 𝑴𝒐𝒗𝒊𝒆', 'minfo'),
-             InlineKeyboardButton(f'🔰 𝑻𝒊𝒑𝒔', 'sinfo')            
+             InlineKeyboardButton(f' 𝑰𝒏𝒇𝒐', 'reqinfo'),
+             InlineKeyboardButton(f' 𝑴𝒐𝒗𝒊𝒆', 'minfo'),
+             InlineKeyboardButton(f' 𝑻𝒊𝒑𝒔', 'sinfo')            
          ]
     )        
 
@@ -835,7 +835,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.answer("⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯\nꜱᴇʀɪᴇꜱ ʀᴇǫᴜᴇꜱᴛ ꜰᴏʀᴍᴀᴛ\n⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯\n\nɢᴏ ᴛᴏ ɢᴏᴏɢʟᴇ ➠ ᴛʏᴘᴇ ᴍᴏᴠɪᴇ ɴᴀᴍᴇ ➠ ᴄᴏᴘʏ ᴄᴏʀʀᴇᴄᴛ ɴᴀᴍᴇ ➠ ᴘᴀꜱᴛᴇ ᴛʜɪꜱ ɢʀᴏᴜᴘ\n\nᴇxᴀᴍᴘʟᴇ : ᴍᴏɴᴇʏ ʜᴇɪsᴛ S01E01\n\n🚯 ᴅᴏɴᴛ ᴜꜱᴇ ➠ ':(!,./)", show_alert=True)      
 
     elif query.data == "tinfo":
-        await query.answer("▣ ᴛɪᴘs ▣\n\n★ ᴛʏᴘᴇ ᴄᴏʀʀᴇᴄᴛ sᴘᴇʟʟɪɴɢ (ɢᴏᴏɢʟᴇ)\n\n★ ɪғ ʏᴏᴜ ɴᴏᴛ ɢᴇᴛ ʏᴏᴜʀ ғɪʟᴇ ɪɴ ᴛʜᴇ ʙᴜᴛᴛᴏɴ ᴛʜᴇɴ ᴛʜᴇ ɴᴇxᴛ sᴛᴇᴘ ɪs ᴄʟɪᴄᴋ ɴᴇxᴛ ʙᴜᴛᴛᴏɴ.\n\n★ ᴄᴏɴᴛɪɴᴜᴇ ᴛʜɪs ᴍᴇᴛʜᴏᴅ ᴛᴏ ɢᴇᴛᴛɪɴɢ ʏᴏᴜ ғɪʟᴇ", show_alert=True)
+        await query.answer("⍟───[ ᴏᴡɴᴇʀ ᴅᴇᴛᴀɪʟꜱ ]───⍟\n• ꜰᴜʟʟ ɴᴀᴍᴇ : 𒆜ᴍʀ ᴋᴅ [ᴏғғɪᴄɪᴀɪʟ] 🇮🇳\n• ᴜꜱᴇʀɴᴀᴍᴇ : @MalluBlasters", show_alert=True)
 
     elif query.data == "reqinfo":
         await query.answer("⚠ ɪɴꜰᴏʀᴍᴀᴛɪᴏɴ ⚠\n\nᴀꜰᴛᴇʀ 10 ᴍɪɴᴜᴛᴇꜱ ᴛʜɪꜱ ᴍᴇꜱꜱᴀɢᴇ ᴡɪʟʟ ʙᴇ ᴀᴜᴛᴏᴍᴀᴛɪᴄᴀʟʟʏ ᴅᴇʟᴇᴛᴇᴅ\n\nɪꜰ ʏᴏᴜ ᴅᴏ ɴᴏᴛ ꜱᴇᴇ ᴛʜᴇ ʀᴇǫᴜᴇsᴛᴇᴅ ᴍᴏᴠɪᴇ / sᴇʀɪᴇs ꜰɪʟᴇ, ʟᴏᴏᴋ ᴀᴛ ᴛʜᴇ ɴᴇxᴛ ᴘᴀɢᴇ", show_alert=True)
@@ -845,14 +845,14 @@ async def cb_handler(client: Client, query: CallbackQuery):
         buttons = [[
             InlineKeyboardButton('➕ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘs ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
         ], [
-            InlineKeyboardButton('🎬 ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ', url='https://t.me/+zzwlJDmPbLpjYWI1'),
+            InlineKeyboardButton('🤴 BOT OWNER', 'tinfo'),
             InlineKeyboardButton('📺 ᴄʜᴀɴɴᴇʟ', url='https://t.me/+G1pSK1X8YyVmMWI1')
         ], [
             InlineKeyboardButton('🔍 sᴇᴀʀᴄʜ', switch_inline_query_current_chat=''),
             InlineKeyboardButton('💥 ᴍᴀɪɴ ᴄʜᴀɴɴᴇʟ', url='https://t.me/+KD5cbZTkMdUwZTdl')
         ], [
             InlineKeyboardButton('🔰 ʜᴇʟᴘ', callback_data='help2'),
-            InlineKeyboardButton(f'ᴀʙᴏᴜᴛ 📚', 'tinfo')
+            InlineKeyboardButton('ᴀʙᴏᴜᴛ 📚', callback_data='about')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
