@@ -38,20 +38,19 @@ async def start(client, message):
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention, message.from_user.username, temp.U_NAME))
     if len(message.command) != 2:
         buttons = [[
-            InlineKeyboardButton('➕ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘs ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            InlineKeyboardButton('⚚ ΛᎠᎠ MΞ ϮԾ YԾUᏒ GᏒԾUᎮ ⚚', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('🎬 ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ', url='https://t.me/+zzwlJDmPbLpjYWI1'),
-            InlineKeyboardButton('📺 ᴄʜᴀɴɴᴇʟ', url='https://t.me/+G1pSK1X8YyVmMWI1')
+            InlineKeyboardButton('💠 CHΛИИΞL 💠', url='https://t.me/+zzwlJDmPbLpjYWI1'),
+            InlineKeyboardButton('💠 UᎮDΛTΞS 💠', url='https://t.me/+G1pSK1X8YyVmMWI1')
             ],[
-            InlineKeyboardButton('🔍 sᴇᴀʀᴄʜ', switch_inline_query_current_chat=''),
-            InlineKeyboardButton('💥 ᴍᴀɪɴ ᴄʜᴀɴɴᴇʟ', url='https://t.me/+KD5cbZTkMdUwZTdl')
+            InlineKeyboardButton('♻️ HΞLᎮ ♻️', callback_data='help'),
+            InlineKeyboardButton('♻️ ΛBOUT ♻️', callback_data='about')
             ],[
-            InlineKeyboardButton('🔰 ʜᴇʟᴘ', callback_data='help'),
-            InlineKeyboardButton('ᴀʙᴏᴜᴛ 📚', callback_data='about')
+            InlineKeyboardButton('💌 SUBSCᏒIBΞ 💌', url='https://t.me/+lTcjMF6iKqs1MjJl')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_chat_action(enums.ChatAction.TYPING)
-        m=await message.reply_sticker("CAACAgUAAxkBAAEHFEVjsBtazFACvx-Z4nKMo8g77X7-QAACJwEAAsiUZBTiPWKAkUSmmi0E")
+        m=await message.reply_text("HELLO.....💞... Bro.")
         await asyncio.sleep(1)
         await m.delete()
         await message.reply_photo(
@@ -70,7 +69,7 @@ async def start(client, message):
         btn = [
             [
                 InlineKeyboardButton(
-                    "🤖 Join Updates Channel", url=invite_link.invite_link
+                    "🔥 JOIИ CHΛИИΞL 🔥", url=invite_link.invite_link
                 )
             ]
         ]
@@ -79,9 +78,9 @@ async def start(client, message):
             try:
                 kk, file_id = message.command[1].split("_", 1)
                 pre = 'checksubp' if kk == 'filep' else 'checksub' 
-                btn.append([InlineKeyboardButton(" 🔄 Try Again", callback_data=f"{pre}#{file_id}")])
+                btn.append([InlineKeyboardButton("🔁 𝐓𝐫𝐲 𝐀𝐠𝐚𝐢𝐧 🔁", callback_data=f"{pre}#{file_id}")])
             except (IndexError, ValueError):
-                btn.append([InlineKeyboardButton(" 🔄 Try Again", url=f"https://t.me/{temp.U_NAME}?start={message.command[1]}")])
+                btn.append([InlineKeyboardButton("🔁 𝐓𝐫𝐲 𝐀𝐠𝐚𝐢𝐧 🔁", url=f"https://t.me/{temp.U_NAME}?start={message.command[1]}")])
         await client.send_message(
             chat_id=message.from_user.id,
             text=FORCE_SUB_TEXT,
@@ -91,20 +90,19 @@ async def start(client, message):
         return
     if len(message.command) == 2 and message.command[1] in ["subscribe", "error", "okay", "help"]:
         buttons = [[
-            InlineKeyboardButton('➕ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘs ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            InlineKeyboardButton('⚚ ΛᎠᎠ MΞ ϮԾ YԾUᏒ GᏒԾUᎮ ⚚', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('🎬 ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ', url='https://t.me/+zzwlJDmPbLpjYWI1'),
-            InlineKeyboardButton('📺 ᴄʜᴀɴɴᴇʟ', url='https://t.me/+G1pSK1X8YyVmMWI1')
+            InlineKeyboardButton('💠 CHΛИИΞL 💠', url='https://t.me/+zzwlJDmPbLpjYWI1'),
+            InlineKeyboardButton('💠 UᎮDΛTΞS 💠', url='https://t.me/+G1pSK1X8YyVmMWI1')
             ],[
-            InlineKeyboardButton('🔍 sᴇᴀʀᴄʜ', switch_inline_query_current_chat=''),
-            InlineKeyboardButton('💥 ᴍᴀɪɴ ᴄʜᴀɴɴᴇʟ', url='https://t.me/+KD5cbZTkMdUwZTdl')
+            InlineKeyboardButton('♻️ HΞLᎮ ♻️', callback_data='help'),
+            InlineKeyboardButton('♻️ ΛBOUT ♻️', callback_data='about')
             ],[
-            InlineKeyboardButton('🔰 ʜᴇʟᴘ', callback_data='help'),
-            InlineKeyboardButton('ᴀʙᴏᴜᴛ 📚', callback_data='about')
+            InlineKeyboardButton('💌 SUBSCᏒIBΞ 💌', url='https://t.me/+lTcjMF6iKqs1MjJl')    
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_chat_action(enums.ChatAction.TYPING)
-        m=await message.reply_sticker("CAACAgUAAxkBAAEG-spjprSY-hPcJpJPXtmfQ-FaKEh78wAC-AMAAp9EiVed3ajGmwsl5iwE")
+        m=await message.reply_text("HELLO.....💞... Bro")
         await asyncio.sleep(1)
         await m.delete()
         await message.reply_photo(
