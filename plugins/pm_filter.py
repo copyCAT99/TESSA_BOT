@@ -850,6 +850,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
         ], [
             InlineKeyboardButton('♻️ HΞLᎮ ♻️', callback_data='help2'),
             InlineKeyboardButton('♻️ ΛBOUT ♻️', callback_data='about')
+        ], [
+            InlineKeyboardButton('💌 SUBSCᏒIBΞ 💌', url='https://t.me/+lTcjMF6iKqs1MjJl')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -953,7 +955,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "about":
         buttons= [[
-            InlineKeyboardButton('♥️ SUBSCᏒIBΞ ♥️', url='https://t.me/+lTcjMF6iKqs1MjJl'),
+            InlineKeyboardButton('💌 SUBSCᏒIBΞ 💌', url='https://t.me/+lTcjMF6iKqs1MjJl'),
             InlineKeyboardButton('💠 UᎮDΛTΞS 💠', url='https://t.me/CINEMACLUBLINKZ')
             ],[
             InlineKeyboardButton('🏠 𝙷𝙾𝙼𝙴 ', callback_data='start'),
