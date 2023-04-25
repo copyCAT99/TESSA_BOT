@@ -141,19 +141,19 @@ async def pm_next_page(bot, query):
         off_set = offset - 10
     if n_offset == 0:
         btn.append(
-            [InlineKeyboardButton("⭅ 𝑩𝒂𝒄𝒌", callback_data=f"pmnext_{req}_{key}_{off_set}"),
-             InlineKeyboardButton(f"🔰 𝑷𝒂𝒈𝒆𝒔 {math.ceil(int(offset) / 10) + 1} / {math.ceil(total / 10)}", callback_data="pages")]                                  
+            [InlineKeyboardButton("⬅️ 𝗕𝗮𝗰𝗸", callback_data=f"pmnext_{req}_{key}_{off_set}"),
+             InlineKeyboardButton(f"🌹 𝗣𝗮𝗴𝗲 {math.ceil(int(offset) / 10) + 1} / {math.ceil(total / 10)}", callback_data="pages")]                                  
         )
     elif off_set is None:
         btn.append(
-            [InlineKeyboardButton(f" {math.ceil(int(offset) / 10) + 1} / {math.ceil(total / 10)}", callback_data="pages"),
-             InlineKeyboardButton("𝑵𝒆𝒙𝒕  ⭆", callback_data=f"pmnext_{req}_{key}_{n_offset}")])
+            [InlineKeyboardButton(f"🌹 𝗣𝗮𝗴𝗲 {math.ceil(int(offset) / 10) + 1} / {math.ceil(total / 10)}", callback_data="pages"),
+             InlineKeyboardButton("𝗡𝗲𝘅𝘁 ➡️", callback_data=f"pmnext_{req}_{key}_{n_offset}")])
     else:
         btn.append(
             [
-                InlineKeyboardButton("⭅ 𝑩𝒂𝒄𝒌", callback_data=f"pmnext_{req}_{key}_{off_set}"),
-                InlineKeyboardButton(f" {math.ceil(int(offset) / 10) + 1} / {math.ceil(total / 10)}", callback_data="pages"),
-                InlineKeyboardButton("𝑵𝒆𝒙𝒕 ⭆", callback_data=f"pmnext_{req}_{key}_{n_offset}")
+                InlineKeyboardButton("⬅️ 𝗕𝗮𝗰𝗸", callback_data=f"pmnext_{req}_{key}_{off_set}"),
+                InlineKeyboardButton(f"🌹 𝗣𝗮𝗴𝗲 {math.ceil(int(offset) / 10) + 1} / {math.ceil(total / 10)}", callback_data="pages"),
+                InlineKeyboardButton("𝗡𝗲𝘅𝘁 ➡️", callback_data=f"pmnext_{req}_{key}_{n_offset}")
             ],
         )
     try:
@@ -232,20 +232,20 @@ async def next_page(bot, query):
         off_set = offset - 10
     if n_offset == 0:
         btn.append(
-            [InlineKeyboardButton("⭅ 𝑩𝒂𝒄𝒌", callback_data=f"next_{req}_{key}_{off_set}"),
-             InlineKeyboardButton(f"🔰 𝑷𝒂𝒈𝒆𝒔 {math.ceil(int(offset) / 10) + 1} / {math.ceil(total / 10)}",
+            [InlineKeyboardButton("⬅️ 𝗕𝗮𝗰𝗸", callback_data=f"next_{req}_{key}_{off_set}"),
+             InlineKeyboardButton(f"🌹 𝗣𝗮𝗴𝗲 {math.ceil(int(offset) / 10) + 1} / {math.ceil(total / 10)}",
                                   callback_data="pages")]
         )
     elif off_set is None:
         btn.append(
-            [InlineKeyboardButton(f" {math.ceil(int(offset) / 10) + 1} / {math.ceil(total / 10)}", callback_data="pages"),
-             InlineKeyboardButton("𝑵𝒆𝒙𝒕 ⭆", callback_data=f"next_{req}_{key}_{n_offset}")])
+            [InlineKeyboardButton(f"🌹 𝗣𝗮𝗴𝗲 {math.ceil(int(offset) / 10) + 1} / {math.ceil(total / 10)}", callback_data="pages"),
+             InlineKeyboardButton("𝗡𝗲𝘅𝘁 ➡️", callback_data=f"next_{req}_{key}_{n_offset}")])
     else:
         btn.append(
             [
-                InlineKeyboardButton("⭅ 𝑩𝒂𝒄𝒌", callback_data=f"next_{req}_{key}_{off_set}"),
-                InlineKeyboardButton(f" {math.ceil(int(offset) / 10) + 1} / {math.ceil(total / 10)}", callback_data="pages"),
-                InlineKeyboardButton("𝑵𝒆𝒙𝒕 ⭆", callback_data=f"next_{req}_{key}_{n_offset}")
+                InlineKeyboardButton("⬅️ 𝗕𝗮𝗰𝗸", callback_data=f"next_{req}_{key}_{off_set}"),
+                InlineKeyboardButton(f"🌹 𝗣𝗮𝗴𝗲 {math.ceil(int(offset) / 10) + 1} / {math.ceil(total / 10)}", callback_data="pages"),
+                InlineKeyboardButton("𝗡𝗲𝘅𝘁 ➡️", callback_data=f"next_{req}_{key}_{n_offset}")
             ],
         )
     try:
@@ -843,13 +843,13 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
     elif query.data == "start":   
         buttons = [[
-            InlineKeyboardButton('+ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ +', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            InlineKeyboardButton('⚚ ΛᎠᎠ MΞ ϮԾ YԾUᏒ GᏒԾUᎮ ⚚', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
         ], [
-            InlineKeyboardButton('♚ ᴏᴡɴᴇʀ', 'tinfo'),
-            InlineKeyboardButton('sᴜᴘᴘᴏʀᴛ ⌬', url='https://t.me/+lTcjMF6iKqs1MjJl')
+            InlineKeyboardButton('💠 CHΛИИΞL 💠', url='https://t.me/CiNEMACLUBGROUPZ'),
+            InlineKeyboardButton('💠 UᎮDΛTΞS 💠', url='https://t.me/CINEMACLUBLINKZ')
         ], [
-            InlineKeyboardButton('〄 ʜᴇʟᴘ', callback_data='help2'),
-            InlineKeyboardButton('ᴀʙᴏᴜᴛ ⍟', callback_data='about')
+            InlineKeyboardButton('♻️ HΞLᎮ ♻️', callback_data='help2'),
+            InlineKeyboardButton('♻️ ΛBOUT ♻️', callback_data='about')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -908,7 +908,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )      
     elif query.data == "help":
         buttons = [[                               
-            InlineKeyboardButton('ᴛᴇʟᴇɢʀᴀᴘʜ​', callback_data='tele'),
+            InlineKeyboardButton('𝚃𝙴𝙻𝙴𝙶𝚁𝙰𝙿𝙷​', callback_data='tele'),
             InlineKeyboardButton('sʜᴀʀᴇ-ᴛᴇxᴛ​', callback_data='sharetxt'),
             InlineKeyboardButton('ꜰɪʟᴇ-sᴛᴏʀᴇ​', callback_data='newdata')
             ],[           
@@ -953,11 +953,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "about":
         buttons= [[
-            InlineKeyboardButton('🤴 ʙᴏᴛ ᴏᴡɴᴇʀ', callback_data='source'),
-            InlineKeyboardButton('💥 ᴍᴀɪɴ ᴄʜᴀɴɴᴇʟ', url='https://t.me/+lTcjMF6iKqs1MjJl')
+            InlineKeyboardButton('♥️ SUBSCᏒIBΞ ♥️', url='https://t.me/+lTcjMF6iKqs1MjJl'),
+            InlineKeyboardButton('💠 UᎮDΛTΞS 💠', url='https://t.me/CINEMACLUBLINKZ')
             ],[
-            InlineKeyboardButton('🏠 Home ', callback_data='start'),
-            InlineKeyboardButton('Close ⛔️', callback_data='close_data')
+            InlineKeyboardButton('🏠 𝙷𝙾𝙼𝙴 ', callback_data='start'),
+            InlineKeyboardButton('𝙲𝙻𝙾𝚂𝙴 🔐', callback_data='close_data')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)        
         await query.message.edit_text(
@@ -1623,7 +1623,7 @@ async def auto_filter(client, msg, spoll=False):
         cap = f"<b>🧿 Title </b> : <b>{search}</b>\n<b>📁 FiLes </b>: <b>{total_results}</b>\n<b>🎙 Audio </b>: <b>Mᴜʟᴛɪ</b>\n\n<b>🔰 Rᴇǫᴜᴇsᴛᴇᴅ Bʏ </b>: <b>{message.from_user.mention}</b>\n<b>© Gʀᴏᴜᴘ </b>: <b>{message.chat.title}</b>"
     if imdb and imdb.get('poster'):
         try:
-            hehe = await message.reply_photo(photo="https://telegra.ph/file/00f09b9e0bc9e8da4b178.jpg", caption=cap, reply_markup=InlineKeyboardMarkup(btn))
+            hehe = await message.reply_photo(photo='https://telegra.ph/file/00f09b9e0bc9e8da4b178.jpg', caption=cap, reply_markup=InlineKeyboardMarkup(btn))
             await asyncio.sleep(IMDB_DELET_TIME)
             await hehe.delete()            
         except (MediaEmpty, PhotoInvalidDimensions, WebpageMediaEmpty):
@@ -1672,12 +1672,12 @@ async def pm_AutoFilter(client, msg, pmspoll=False):
         PM_BUTTONS[key] = search
         req = message.from_user.id if message.from_user else 0
         btn.append(
-            [InlineKeyboardButton(text=f"🔰 𝑷𝒂𝒈𝒆𝒔 1/{math.ceil(int(total_results) / 6)}", callback_data="pages"),
-            InlineKeyboardButton(text="𝑵𝒆𝒙𝒕 ⭆", callback_data=f"pmnext_{req}_{key}_{offset}")]
+            [InlineKeyboardButton(text=f"🌹 𝗣𝗮𝗴𝗲 1/{math.ceil(int(total_results) / 6)}", callback_data="pages"),
+            InlineKeyboardButton(text="𝗡𝗲𝘅𝘁 ➡️", callback_data=f"pmnext_{req}_{key}_{offset}")]
         )
     else:
         btn.append(
-            [InlineKeyboardButton(text="📄 𝗣𝗮𝗴𝗲 1/1", callback_data="pages")]
+            [InlineKeyboardButton(text="🌹 𝗣𝗮𝗴𝗲 1/1", callback_data="pages")]
         )
     imdb = await get_poster(search) if IMDB else None
     TEMPLATE = IMDB_TEMPLATE
@@ -1719,7 +1719,7 @@ async def pm_AutoFilter(client, msg, pmspoll=False):
         cap = f"<b><i>Hey</i></b> 👋🏻 <b><i>{message.from_user.mention}</i></b>\n\n 🔖 <b><i>Title</i></b> : <b><i>{search}</i></b>\n 📫 <b><i>Your Files is Ready Now</i></b>"
     if imdb and imdb.get('poster'):
         try:
-            hehe = await message.reply_photo(photo="https://telegra.ph/file/00f09b9e0bc9e8da4b178.jpg", caption=cap, reply_markup=InlineKeyboardMarkup(btn))
+            hehe = await message.reply_photo(photo='https://telegra.ph/file/00f09b9e0bc9e8da4b178.jpg', caption=cap, reply_markup=InlineKeyboardMarkup(btn))
             await asyncio.sleep(IMDB_DELET_TIME)
             await hehe.delete()            
         except (MediaEmpty, PhotoInvalidDimensions, WebpageMediaEmpty):
