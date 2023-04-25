@@ -843,16 +843,13 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
     elif query.data == "start":   
         buttons = [[
-            InlineKeyboardButton('➕ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘs ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            InlineKeyboardButton('+ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ +', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
         ], [
-            InlineKeyboardButton('🤴 BOT OWNER', 'tinfo'),
-            InlineKeyboardButton('📺 ᴄʜᴀɴɴᴇʟ', url='https://t.me/+G1pSK1X8YyVmMWI1')
+            InlineKeyboardButton('♚ ᴏᴡɴᴇʀ', 'tinfo'),
+            InlineKeyboardButton('sᴜᴘᴘᴏʀᴛ ⌬', url='https://t.me/+lTcjMF6iKqs1MjJl')
         ], [
-            InlineKeyboardButton('🔍 sᴇᴀʀᴄʜ', switch_inline_query_current_chat=''),
-            InlineKeyboardButton('💥 ᴍᴀɪɴ ᴄʜᴀɴɴᴇʟ', url='https://t.me/+KD5cbZTkMdUwZTdl')
-        ], [
-            InlineKeyboardButton('🔰 ʜᴇʟᴘ', callback_data='help2'),
-            InlineKeyboardButton('ᴀʙᴏᴜᴛ 📚', callback_data='about')
+            InlineKeyboardButton('〄 ʜᴇʟᴘ', callback_data='help2'),
+            InlineKeyboardButton('ᴀʙᴏᴜᴛ ⍟', callback_data='about')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -957,7 +954,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "about":
         buttons= [[
             InlineKeyboardButton('🤴 ʙᴏᴛ ᴏᴡɴᴇʀ', callback_data='source'),
-            InlineKeyboardButton('💥 ᴍᴀɪɴ ᴄʜᴀɴɴᴇʟ', url='https://t.me/+KD5cbZTkMdUwZTdl')
+            InlineKeyboardButton('💥 ᴍᴀɪɴ ᴄʜᴀɴɴᴇʟ', url='https://t.me/+lTcjMF6iKqs1MjJl')
             ],[
             InlineKeyboardButton('🏠 Home ', callback_data='start'),
             InlineKeyboardButton('Close ⛔️', callback_data='close_data')
@@ -1579,12 +1576,12 @@ async def auto_filter(client, msg, spoll=False):
         BUTTONS[key] = search
         req = message.from_user.id if message.from_user else 0
         btn.append(
-            [InlineKeyboardButton(text=f"🔰 𝑷𝒂𝒈𝒆𝒔 1/{math.ceil(int(total_results) / 6)}", callback_data="pages"),
-             InlineKeyboardButton(text="𝑵𝒆𝒙𝒕 ⭆", callback_data=f"next_{req}_{key}_{offset}")]
+            [InlineKeyboardButton(text=f"🌹 𝗣𝗮𝗴𝗲 1/{math.ceil(int(total_results) / 6)}", callback_data="pages"),
+             InlineKeyboardButton(text="𝗡𝗲𝘅𝘁 ➡️", callback_data=f"next_{req}_{key}_{offset}")]
         )
     else:
         btn.append(
-            [InlineKeyboardButton(text="📄 𝗣𝗮𝗴𝗲 1/1", callback_data="pages")]
+            [InlineKeyboardButton(text="🌹 𝗣𝗮𝗴𝗲 1/1", callback_data="pages")]
         )
     imdb = await get_poster(search, file=(files[0]).file_name) if settings["imdb"] else None
     TEMPLATE = settings['template']
@@ -1626,7 +1623,7 @@ async def auto_filter(client, msg, spoll=False):
         cap = f"<b>🧿 Title </b> : <b>{search}</b>\n<b>📁 FiLes </b>: <b>{total_results}</b>\n<b>🎙 Audio </b>: <b>Mᴜʟᴛɪ</b>\n\n<b>🔰 Rᴇǫᴜᴇsᴛᴇᴅ Bʏ </b>: <b>{message.from_user.mention}</b>\n<b>© Gʀᴏᴜᴘ </b>: <b>{message.chat.title}</b>"
     if imdb and imdb.get('poster'):
         try:
-            hehe = await message.reply_photo(photo=imdb.get('poster'), caption=cap, reply_markup=InlineKeyboardMarkup(btn))
+            hehe = await message.reply_photo(photo="https://telegra.ph/file/00f09b9e0bc9e8da4b178.jpg", caption=cap, reply_markup=InlineKeyboardMarkup(btn))
             await asyncio.sleep(IMDB_DELET_TIME)
             await hehe.delete()            
         except (MediaEmpty, PhotoInvalidDimensions, WebpageMediaEmpty):
@@ -1722,7 +1719,7 @@ async def pm_AutoFilter(client, msg, pmspoll=False):
         cap = f"<b><i>Hey</i></b> 👋🏻 <b><i>{message.from_user.mention}</i></b>\n\n 🔖 <b><i>Title</i></b> : <b><i>{search}</i></b>\n 📫 <b><i>Your Files is Ready Now</i></b>"
     if imdb and imdb.get('poster'):
         try:
-            hehe = await message.reply_photo(photo=imdb.get('poster'), caption=cap, reply_markup=InlineKeyboardMarkup(btn))
+            hehe = await message.reply_photo(photo="https://telegra.ph/file/00f09b9e0bc9e8da4b178.jpg", caption=cap, reply_markup=InlineKeyboardMarkup(btn))
             await asyncio.sleep(IMDB_DELET_TIME)
             await hehe.delete()            
         except (MediaEmpty, PhotoInvalidDimensions, WebpageMediaEmpty):
