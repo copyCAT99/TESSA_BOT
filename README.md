@@ -1,6 +1,6 @@
 
 <p align="center">
-  <img src="[[https://telegra.ph/file/79bd83439254ed9c4bbca.jpg])" alt="KDBotz LOGO">
+  <img src="[[https://telegra.ph/file/79bd83439254ed9c4bbca.jpg])" alt="KD_BOTZZ LOGO">
 </p>
 <h1 align="center">
   <b> TESSA_BOT</b>
