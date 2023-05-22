@@ -22,7 +22,7 @@ BATCH_FILES = {}
 async def start(client, message):
     if message.chat.type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
         buttons = [[           
-            InlineKeyboardButton('📢 ᴜᴘᴅᴀᴛᴇs', url='https://t.me/+sxErd_EqLl9kYzQ1')
+            InlineKeyboardButton('📢 ᴜᴘᴅᴀᴛᴇs', url='https://t.me/+4UJ3l6Ihvw8xYjRl')
             ],[
             InlineKeyboardButton('🔰 ʜᴇʟᴘ', url=f"https://t.me/{temp.U_NAME}?start=help")
             ]]
@@ -38,15 +38,15 @@ async def start(client, message):
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention, message.from_user.username, temp.U_NAME))
     if len(message.command) != 2:
         buttons = [[
-            InlineKeyboardButton('⚚ ΛᎠᎠ MΞ ϮԾ YԾUᏒ GᏒԾUᎮ ⚚', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            InlineKeyboardButton('⚚ 𝒂𝒅𝒅 𝒎𝒆 𝒕𝒐 𝒚𝒐𝒖𝒓 𝒈𝒓𝒐𝒖𝒑 ⚚', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('💠 CHΛИИΞL 💠', url='https://t.me/+zzwlJDmPbLpjYWI1'),
-            InlineKeyboardButton('💠 UᎮDΛTΞS 💠', url='https://t.me/+G1pSK1X8YyVmMWI1')
+            InlineKeyboardButton('💠 𝒄𝒉𝒂𝒏𝒏𝒆𝒍 💠', url='https://t.me/CINEMACLUBLINKZ'),
+            InlineKeyboardButton('💠 𝒖𝒑𝒅𝒂𝒕𝒆𝒔 💠', url='https://t.me/+4UJ3l6Ihvw8xYjRl')
             ],[
-            InlineKeyboardButton('♻️ HΞLᎮ ♻️', callback_data='help'),
-            InlineKeyboardButton('♻️ ΛBOUT ♻️', callback_data='about')
+            InlineKeyboardButton('♻️ 𝒂𝒃𝒐𝒖𝒕 ♻️', callback_data='about'),
+            InlineKeyboardButton('♻️ 𝒉𝒆𝒍𝒑 ♻️', callback_data='help1')
             ],[
-            InlineKeyboardButton('💌 SUBSCᏒIBΞ 💌', url='https://t.me/+lTcjMF6iKqs1MjJl')
+            InlineKeyboardButton('💌 𝒋𝒐𝒊𝒏 𝒐𝒖𝒓 𝒎𝒐𝒗𝒊𝒆 𝒈𝒓𝒐𝒖𝒑 💌', url='https://t.me/+13GM3oiLFVI0MjE1')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_chat_action(enums.ChatAction.TYPING)
@@ -90,15 +90,15 @@ async def start(client, message):
         return
     if len(message.command) == 2 and message.command[1] in ["subscribe", "error", "okay", "help"]:
         buttons = [[
-            InlineKeyboardButton('⚚ ΛᎠᎠ MΞ ϮԾ YԾUᏒ GᏒԾUᎮ ⚚', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            InlineKeyboardButton('⚚ 𝒂𝒅𝒅 𝒎𝒆 𝒕𝒐 𝒚𝒐𝒖𝒓 𝒈𝒓𝒐𝒖𝒑 ⚚', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('💠 CHΛИИΞL 💠', url='https://t.me/+zzwlJDmPbLpjYWI1'),
-            InlineKeyboardButton('💠 UᎮDΛTΞS 💠', url='https://t.me/+G1pSK1X8YyVmMWI1')
+            InlineKeyboardButton('💠 𝒄𝒉𝒂𝒏𝒏𝒆𝒍 💠', url='https://t.me/CINEMACLUBLINKZ'),
+            InlineKeyboardButton('💠 𝒖𝒑𝒅𝒂𝒕𝒆𝒔 💠', url='https://t.me/+4UJ3l6Ihvw8xYjRl')
             ],[
-            InlineKeyboardButton('♻️ HΞLᎮ ♻️', callback_data='help'),
-            InlineKeyboardButton('♻️ ΛBOUT ♻️', callback_data='about')
+            InlineKeyboardButton('♻️ 𝒂𝒃𝒐𝒖𝒕 ♻️', callback_data='about'),
+            InlineKeyboardButton('♻️ 𝒉𝒆𝒍𝒑 ♻️', callback_data='help1')
             ],[
-            InlineKeyboardButton('💌 SUBSCᏒIBΞ 💌', url='https://t.me/+lTcjMF6iKqs1MjJl')    
+            InlineKeyboardButton('💌 𝒋𝒐𝒊𝒏 𝒐𝒖𝒓 𝒎𝒐𝒗𝒊𝒆 𝒈𝒓𝒐𝒖𝒑 💌', url='https://t.me/+13GM3oiLFVI0MjE1')    
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_chat_action(enums.ChatAction.TYPING)
