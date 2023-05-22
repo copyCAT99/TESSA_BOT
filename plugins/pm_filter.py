@@ -1774,7 +1774,7 @@ async def pm_spoll_choker(msg):
     PM_SPELL_CHECK[msg.id] = movielist
     btn = [[InlineKeyboardButton(text=movie.strip(), callback_data=f"pmspolling#{user}#{k}")] for k, movie in enumerate(movielist)]
     btn.append([InlineKeyboardButton(text="Close", callback_data=f'pmspolling#{user}#close_spellcheck')])
-    await msg.reply_Photo(Photo='https://te.legra.ph/file/be09f04258fe39458a4d7.jpg', caption="I couldn't find anything related to that\nDid you mean any one of these?", reply_markup=InlineKeyboardMarkup(btn), reply_to_message_id=msg.id)
+    await msg.reply_Photo(Photo="https://te.legra.ph/file/be09f04258fe39458a4d7.jpg", caption="I couldn't find anything related to that\nDid you mean any one of these?", reply_markup=InlineKeyboardMarkup(btn), reply_to_message_id=msg.id)
      
 
 
@@ -1829,7 +1829,7 @@ async def advantage_spell_chok(msg):
         )
     ] for k, movie in enumerate(movielist)]
     btn.append([InlineKeyboardButton(text="Close", callback_data=f'spolling#{user}#close_spellcheck')])
-    await reply_Photo(Photo='https://te.legra.ph/file/be09f04258fe39458a4d7.jpg', caption="I couldn't find anything related to that\nDid you mean any one of these?",
+    await reply_Photo(Photo="https://te.legra.ph/file/be09f04258fe39458a4d7.jpg", caption="I couldn't find anything related to that\nDid you mean any one of these?",
                     reply_markup=InlineKeyboardMarkup(btn))
 
 
