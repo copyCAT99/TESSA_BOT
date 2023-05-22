@@ -1612,22 +1612,22 @@ async def auto_filter(client, msg, spoll=False):
         cap = f"<b>🧿 Title </b> : <b>{search}</b>\n<b>📁 FiLes </b>: <b>{total_results}</b>\n<b>🎙 Audio </b>: <b>Mᴜʟᴛɪ</b>\n\n<b>🔰 Rᴇǫᴜᴇsᴛᴇᴅ Bʏ </b>: <b>{message.from_user.mention}</b>\n<b>© Gʀᴏᴜᴘ </b>: <b>{message.chat.title}</b>"
     if imdb and imdb.get('poster'):
         try:
-            hehe = await message.reply_Sticker(Sticker="CAACAgUAAxkBAAECUj5kazul40oKsxSh69NOTv9_xv-6OQACLQAD4QABARuddeAAARIKfRweBA", caption=cap, reply_markup=InlineKeyboardMarkup(btn))
+            hehe = await message.reply_photo(photo=imdb.get('poster'), caption=cap, reply_markup=InlineKeyboardMarkup(btn))
             await asyncio.sleep(IMDB_DELET_TIME)
             await hehe.delete()            
         except (MediaEmpty, PhotoInvalidDimensions, WebpageMediaEmpty):
             pic = imdb.get('poster')
             poster = pic.replace('.jpg', "._V1_UX360.jpg")
-            hmm = await message.reply_Sticker(Sticker="CAACAgUAAxkBAAECUj5kazul40oKsxSh69NOTv9_xv-6OQACLQAD4QABARuddeAAARIKfRweBA", caption=cap, reply_markup=InlineKeyboardMarkup(btn))           
+            hmm = await message.reply_photo(photo=imdb.get('poster'), caption=cap, reply_markup=InlineKeyboardMarkup(btn))           
             await asyncio.sleep(IMDB_DELET_TIME)
             await hmm.delete()            
         except Exception as e:
             logger.exception(e)
-            fek = await message.reply_text(cap, reply_markup=InlineKeyboardMarkup(btn))
+            fek = await message.reply_photo(photo='https://te.legra.ph/file/a007a9e54bee324459613.jpg',caption=cap, reply_markup=InlineKeyboardMarkup(btn))
             await asyncio.sleep(IMDB_DELET_TIME)
             await fek.delete()
     else:
-        fuk = await message.reply_text(cap, reply_markup=InlineKeyboardMarkup(btn))
+        fuk = await message.reply_photo(photo='https://te.legra.ph/file/a007a9e54bee324459613.jpg',caption=cap, reply_markup=InlineKeyboardMarkup(btn))
         await asyncio.sleep(IMDB_DELET_TIME)
         await fuk.delete()        
     if spoll:
@@ -1708,22 +1708,22 @@ async def pm_AutoFilter(client, msg, pmspoll=False):
         cap = f"<b>🧿 Title </b> : <b>{search}</b>\n<b>📁 FiLes </b>: <b>{total_results}</b>\n<b>🎙 Audio </b>: <b>Mᴜʟᴛɪ</b>\n\n<b>🔰 Rᴇǫᴜᴇsᴛᴇᴅ Bʏ </b>: <b>{message.from_user.mention}</b>\n<b>© Gʀᴏᴜᴘ </b>: <b>{message.chat.title}</b>"
     if imdb and imdb.get('poster'):
         try:
-            hehe = await message.reply_Sticker(Sticker="CAACAgUAAxkBAAECUj5kazul40oKsxSh69NOTv9_xv-6OQACLQAD4QABARuddeAAARIKfRweBA", caption=cap, reply_markup=InlineKeyboardMarkup(btn))
+            hehe = await message.reply_photo(photo=imdb.get('poster'), caption=cap, reply_markup=InlineKeyboardMarkup(btn))
             await asyncio.sleep(IMDB_DELET_TIME)
             await hehe.delete()            
         except (MediaEmpty, PhotoInvalidDimensions, WebpageMediaEmpty):
             pic = imdb.get('poster')
             poster = pic.replace('.jpg', "._V1_UX360.jpg")
-            hmm = await message.reply_Sticker(Sticker="CAACAgUAAxkBAAECUj5kazul40oKsxSh69NOTv9_xv-6OQACLQAD4QABARuddeAAARIKfRweBA", caption=cap, reply_markup=InlineKeyboardMarkup(btn))           
+            hmm = await message.reply_photo(photo=imdb.get('poster'), caption=cap, reply_markup=InlineKeyboardMarkup(btn))           
             await asyncio.sleep(IMDB_DELET_TIME)
             await hmm.delete()            
         except Exception as e:
             logger.exception(e)
-            fek = await message.reply_text(cap, reply_markup=InlineKeyboardMarkup(btn))
+            fek = await message.reply_photo(photo='https://te.legra.ph/file/a007a9e54bee324459613.jpg',caption=cap, reply_markup=InlineKeyboardMarkup(btn))
             await asyncio.sleep(IMDB_DELET_TIME)
             await fek.delete()
     else:
-        fuk = await message.reply_text(cap, reply_markup=InlineKeyboardMarkup(btn))
+        fuk = await message.reply_photo(photo='https://te.legra.ph/file/a007a9e54bee324459613.jpg',caption=cap, reply_markup=InlineKeyboardMarkup(btn))
         await asyncio.sleep(IMDB_DELET_TIME)
         await fuk.delete()        
     if pmspoll:
