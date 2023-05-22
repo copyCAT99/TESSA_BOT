@@ -842,7 +842,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('💠 𝒖𝒑𝒅𝒂𝒕𝒆𝒔 💠', url='https://t.me/CINEMACLUBLINKZ')
         ], [
             InlineKeyboardButton('♻️ 𝒂𝒃𝒐𝒖𝒕 ♻️', callback_data='about'),
-            InlineKeyboardButton('♻️ 𝒉𝒆𝒍𝒑 ♻️', callback_data='help2')
+            InlineKeyboardButton('♻️ 𝒉𝒆𝒍𝒑 ♻️', callback_data='help1')
         ], [
             InlineKeyboardButton('💌 𝒋𝒐𝒊𝒏 𝒐𝒖𝒓 𝒎𝒐𝒗𝒊𝒆 𝒈𝒓𝒐𝒖𝒑 💌', url='https://t.me/+lTcjMF6iKqs1MjJl')
         ]]
@@ -882,18 +882,18 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
-    elif query.data == "help2":
+    elif query.data == "help1":
         buttons = [[                               
-            InlineKeyboardButton('Mᴀɴᴜᴀʟ Fɪʟᴛᴇʀ', callback_data='manuelfilter'),
-            InlineKeyboardButton('Aᴜᴛᴏ Fɪʟᴛᴇʀ', callback_data='autofilter')
+            InlineKeyboardButton('𝑴-𝑭𝒊𝒍𝒕𝒆𝒓', callback_data='manuelfilter'),
+            InlineKeyboardButton('𝐀-𝐅𝐢𝐥𝐭𝐞𝐫', callback_data='autofilter')
             ],[
-            InlineKeyboardButton('Cᴏɴɴᴇᴄᴛɪᴏɴꜱ', callback_data='coct'),
-            InlineKeyboardButton('Exᴛʀᴀ Mᴏᴅꜱ', callback_data='extra')   
+            InlineKeyboardButton('𝑪𝒐𝒏𝒏𝒆𝒄𝒕𝒊𝒐𝒏𝒔', callback_data='coct'),
+            InlineKeyboardButton('𝑬𝒙𝒕𝒓𝒂-𝑴𝒐𝒅𝒔', callback_data='extra')   
             ],[
-            InlineKeyboardButton('Sᴛᴀᴛᴜꜱ', callback_data='stats'),
-            InlineKeyboardButton('ɴᴇxᴛ', callback_data='help')
+            InlineKeyboardButton('𝑺𝒕𝒂𝒕𝒖𝒔', callback_data='stats'),
+            InlineKeyboardButton('𝖓𝖊𝖝𝖙»', callback_data='help')
             ],[
-            InlineKeyboardButton('ʙᴀᴄᴋ ᴛᴏ ʜᴏᴍᴇ', callback_data='start')
+            InlineKeyboardButton('🔍sᴇᴀʀᴄʜ', switch_inline_query_current_chat=''),
          ]] 
         reply_markup = InlineKeyboardMarkup(buttons)             
         await query.message.edit_text(                     
@@ -901,25 +901,25 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )      
-    elif query.data == "help":
+    elif query.data == "help2":
         buttons = [[                               
-            InlineKeyboardButton('𝚃𝙴𝙻𝙴𝙶𝚁𝙰𝙿𝙷​', callback_data='tele'),
-            InlineKeyboardButton('sʜᴀʀᴇ-ᴛᴇxᴛ​', callback_data='sharetxt'),
-            InlineKeyboardButton('ꜰɪʟᴇ-sᴛᴏʀᴇ​', callback_data='newdata')
+            InlineKeyboardButton('𝑻𝒆-𝑷𝒉𝒐𝒕𝒐', callback_data='tele'),
+            InlineKeyboardButton('𝑺𝒉𝒂𝒓𝒆-𝑻𝒆𝒙𝒕', callback_data='sharetxt'),
+            InlineKeyboardButton('𝑭𝒊𝒍𝒆-𝑺𝒕𝒐𝒓𝒆', callback_data='newdata')
             ],[           
-            InlineKeyboardButton('ᴊsᴏɴᴇ', callback_data='son'),
-            InlineKeyboardButton('ᴛᴛs', callback_data='ttss'),           
-            InlineKeyboardButton('ᴘᴜʀɢᴇ', callback_data='purges')
+            InlineKeyboardButton('𝑱𝒔𝒐𝒏𝒆', callback_data='son'),
+            InlineKeyboardButton('𝑻𝒕𝒔', callback_data='ttss'),           
+            InlineKeyboardButton('𝑷𝒖𝒓𝒈𝒆', callback_data='purges')
             ],[
-            InlineKeyboardButton('ᴘᴀsᴛᴇ', callback_data='pastes'),
-            InlineKeyboardButton("ɪᴍᴀɢᴇ", callback_data='image'),
-            InlineKeyboardButton('ᴘɪɴɢ', callback_data='pings')                                   
+            InlineKeyboardButton('𝑷𝒂𝒔𝒕𝒆', callback_data='pastes'),
+            InlineKeyboardButton("𝑰𝒎𝒂𝒈𝒆", callback_data='image'),
+            InlineKeyboardButton('𝑷𝒊𝒏𝒈', callback_data='pings')                                   
             ],[
-            InlineKeyboardButton('◁ʙᴀᴄᴋ', callback_data='help2'),
-            InlineKeyboardButton('ɴᴇxᴛ', callback_data='help3')
-            ],[
-            InlineKeyboardButton('ʙᴀᴄᴋ ᴛᴏ ʜᴏᴍᴇ​', callback_data='start')
-         ]]
+            InlineKeyboardButton('«𝒃𝒂𝒄𝒌', callback_data='help1'),
+            InlineKeyboardButton('𝖓𝖊𝖝𝖙»', callback_data='help3')
+            ]]
+
+
         reply_markup = InlineKeyboardMarkup(buttons)             
         await query.message.edit_text(                     
             text=script.HELP_TXT.format(query.from_user.mention),
@@ -928,17 +928,15 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )      
     elif query.data == "help3":
         buttons = [[
-            InlineKeyboardButton('ᴘᴀsᴛᴇ', callback_data='pastes'),
-            InlineKeyboardButton('ᴜʀʟ_sʜᴏʀᴛ', callback_data='urlshort'),
-            InlineKeyboardButton('ᴘɪɴɢ', callback_data='pings')
+                    
+      
+            InlineKeyboardButton('𝑴𝒖𝒕𝒆', callback_data='restric'),
+            InlineKeyboardButton('𝑲𝒊𝒄𝒌', callback_data='zombies'),
+            InlineKeyboardButton('𝑷𝒊𝒏', callback_data='pin')
             ],[
-            InlineKeyboardButton('𝙼𝚄𝚃𝙴', callback_data='restric'),
-            InlineKeyboardButton('ᴋɪᴄᴋ', callback_data='zombies'),
-            InlineKeyboardButton('ᴘɪɴ', callback_data='pin')
-            ],[
-            InlineKeyboardButton('◁ʙᴀᴄᴋ', callback_data='help'),
-            InlineKeyboardButton('ᴅᴇᴘʟᴏʏ', callback_data='suneesh'),
-            InlineKeyboardButton(' ᴄʟᴏsᴇ ✗', callback_data='close_data')
+            InlineKeyboardButton('«𝒃𝒂𝒄𝒌', callback_data='help'),
+            InlineKeyboardButton('𝑫𝒆𝒑𝒍𝒐𝒚', callback_data='suneesh'),
+            InlineKeyboardButton('𝑼𝒓𝒍-𝑺𝒉𝒐𝒓𝒕', callback_data='urlshort'),
          ]]
         reply_markup = InlineKeyboardMarkup(buttons)             
         await query.message.edit_text(                     
@@ -1565,12 +1563,12 @@ async def auto_filter(client, msg, spoll=False):
         BUTTONS[key] = search
         req = message.from_user.id if message.from_user else 0
         btn.append(
-            [InlineKeyboardButton(text=f"🌹 𝗣𝗮𝗴𝗲 1/{math.ceil(int(total_results) / 6)}", callback_data="pages"),
-             InlineKeyboardButton(text="𝗡𝗲𝘅𝘁 ➡️", callback_data=f"next_{req}_{key}_{offset}")]
+            [InlineKeyboardButton(text=f"🔰𝒑𝒂𝒈𝒆 1/{math.ceil(int(total_results) / 6)}", callback_data="pages"),
+             InlineKeyboardButton(text="𝖓𝖊𝖝𝖙➡️", callback_data=f"next_{req}_{key}_{offset}")]
         )
     else:
         btn.append(
-            [InlineKeyboardButton(text="🌹 𝗣𝗮𝗴𝗲 1/1", callback_data="pages")]
+            [InlineKeyboardButton(text="🔰𝒑𝒂𝒈𝒆 1/1", callback_data="pages")]
         )
     imdb = await get_poster(search, file=(files[0]).file_name) if settings["imdb"] else None
     TEMPLATE = settings['template']
@@ -1661,12 +1659,12 @@ async def pm_AutoFilter(client, msg, pmspoll=False):
         PM_BUTTONS[key] = search
         req = message.from_user.id if message.from_user else 0
         btn.append(
-            [InlineKeyboardButton(text=f"🌹 𝗣𝗮𝗴𝗲 1/{math.ceil(int(total_results) / 6)}", callback_data="pages"),
-            InlineKeyboardButton(text="𝗡𝗲𝘅𝘁 ➡️", callback_data=f"pmnext_{req}_{key}_{offset}")]
+            [InlineKeyboardButton(text=f"🔰𝒑𝒂𝒈𝒆 1/{math.ceil(int(total_results) / 6)}", callback_data="pages"),
+            InlineKeyboardButton(text="𝖓𝖊𝖝𝖙➡️", callback_data=f"pmnext_{req}_{key}_{offset}")]
         )
     else:
         btn.append(
-            [InlineKeyboardButton(text="🌹 𝗣𝗮𝗴𝗲 1/1", callback_data="pages")]
+            [InlineKeyboardButton(text="🔰𝒑𝒂𝒈𝒆 1/1", callback_data="pages")]
         )
     imdb = await get_poster(search) if IMDB else None
     TEMPLATE = IMDB_TEMPLATE
