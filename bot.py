@@ -57,7 +57,7 @@ class Bot(Client):
         logging.info(LOG_STR)
         if LOG_CHANNEL:
             try:
-                await self.send_message(LOG_CHANNEL, text=f"<b>{me.mention} Iꜱ Rᴇsᴛᴀʀᴛᴇᴅ !!\n\n📅 Dᴀᴛᴇ : <code>{date}</code>\n⏰ Tɪᴍᴇ : <code>{time}</code>\n🌐 Tɪᴍᴇᴢᴏɴᴇ : <code>{TIMEZONE}</code>\n\n🉐 Vᴇʀsɪᴏɴ : <code>v{__version__} (Layer {layer})</code></b>")                      
+                await self.send_message(LOG_CHANNEL, text=f"<b>{me.mention} 𝖡𝗈𝗍 𝖱𝖾𝗌𝗍𝖺𝗋𝗍𝖾𝖽 !\n\n📅 𝖣𝖺𝗍𝖾 : <code>{date}</code>\n⏰ 𝖳𝗂𝗆𝖾 : <code>{time}</code>\n🌐 𝖳𝗂𝗆𝖾𝗓𝗈𝗇𝖾 : <code>{TIMEZONE}</code>\n\n🉐 𝖡𝗎𝗂𝗅𝖽 𝖲𝗍𝖺𝗍𝗎𝗌 : <code>v{__version__} (Layer {layer})</code></b>")                      
             except Unauthorized:
                 LOGGER.warning("Bot isn't able to send message to LOG_CHANNEL")
             except BadRequest as e:
