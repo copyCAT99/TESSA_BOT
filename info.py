@@ -27,8 +27,9 @@ BOT_TOKEN = environ['BOT_TOKEN']
 CACHE_TIME = int(environ.get('CACHE_TIME', 9999))
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', True))
 PICS = (environ.get('PICS' ,'https://telegra.ph/file/79bd83439254ed9c4bbca.jpg')).split()
-NOR_IMG = (environ.get('NOR_IMG', 'https://telegra.ph/file/46443096bc6895c74a716.jpg')
 BOT_START_TIME = time()
+
+
 
 # Admins, Channels & Users
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '').split()]
@@ -51,6 +52,7 @@ START_MESSAGE = environ.get('START_MESSAGE', '<b>ʜᴇʏ,{user}\n\n𝘐 ɪ ᴀ�
 BUTTON_LOCK_TEXT = environ.get("BUTTON_LOCK_TEXT", "⚠️ 𝙃𝙚𝙮 {query}! 𝙏𝙝𝙖𝙩'𝙨 𝙉𝙤𝙩 𝙁𝙤𝙧 𝙔𝙤𝙪. 𝙋𝙡𝙚𝙖𝙨𝙚 𝙍𝙚𝙦𝙪𝙚𝙨𝙩 𝙔𝙤𝙪𝙧 𝙊𝙬𝙣")
 FORCE_SUB_TEXT = environ.get('FORCE_SUB_TEXT', 'Fɪʀsᴛ ᴄʟɪᴄᴋ ᴏɴ Rᴇǫᴜᴇꜱᴛ Tᴏ Jᴏɪɴ Cʜᴀɴɴᴇʟ ʙᴜᴛᴛᴏɴ . ᴛʜᴇɴ ᴄᴏᴍᴇ ʙᴀᴄᴋ ᴛᴏ ᴛʜᴇ ʙᴏᴛ ᴄʟɪᴄᴋ ᴏɴ ᴍᴇ ᴊᴏɪɴᴇᴅ ʙᴜᴛᴛᴏɴ ᴛᴏ ɢᴇᴛ ᴛʜᴇ ғɪʟᴇ...')
 WELCOM_PIC = environ.get("WELCOM_PIC", "https://telegra.ph/file/a0d8eccea7198ed5ac562.jpg")
+NOR_IMG = (environ.get("NOR_IMG", "https://telegra.ph/file/46443096bc6895c74a716.jpg")
 WELCOM_TEXT = environ.get("WELCOM_TEXT", "Hai {user}\nwelcome to {chat}")
 PMFILTER = bool(environ.get("PMFILTER", True))
 G_FILTER = bool(environ.get("G_FILTER", True))
