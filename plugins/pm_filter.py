@@ -1609,7 +1609,7 @@ async def auto_filter(client, msg, spoll=False):
             **locals()
         )
     else:
-        cap = f"<b>🧿 Title </b> : <b>{search}</b>\n<b>📁 FiLes </b>: <b>{total_results}</b>\n<b>🎙 Audio </b>: <b>Mᴜʟᴛɪ</b>\n\n<b>🔰 Rᴇǫᴜᴇsᴛᴇᴅ Bʏ </b>: <b>{message.from_user.mention}</b>\n<b>© Gʀᴏᴜᴘ </b>: <b>{message.chat.title}</b>"
+        cap = f"<b>📁 Here is What I Found In My Database For Your Query</b> :<b>{search}</b>"
     if imdb and imdb.get('poster'):
         try:
             hehe = await message.reply_photo(photo=imdb.get('poster'), caption=cap, reply_markup=InlineKeyboardMarkup(btn))
@@ -1705,7 +1705,7 @@ async def pm_AutoFilter(client, msg, pmspoll=False):
             **locals()
         )
     else:
-        cap = f"<b>🧿 Title </b> : <b>{search}</b>\n<b>📁 FiLes </b>: <b>{total_results}</b>\n<b>🎙 Audio </b>: <b>Mᴜʟᴛɪ</b>\n\n<b>🔰 Rᴇǫᴜᴇsᴛᴇᴅ Bʏ </b>: <b>{message.from_user.mention}</b>\n<b>© Gʀᴏᴜᴘ </b>: <b>{message.chat.title}</b>"
+        cap = f"<b>📁 Here is What I Found In My Database For Your Query</b> : <b>{search}</b>"
     if imdb and imdb.get('poster'):
         try:
             hehe = await message.reply_photo(photo=imdb.get('poster'), caption=cap, reply_markup=InlineKeyboardMarkup(btn))
