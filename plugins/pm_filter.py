@@ -4,7 +4,7 @@ from Script import script
 import pyrogram
 from database.connections_mdb import active_connection, all_connections, delete_connection, if_active, make_active, make_inactive
 from info import ADMINS, AUTH_CHANNEL, AUTH_USERS, CUSTOM_FILE_CAPTION, AUTH_GROUPS, P_TTI_SHOW_OFF, IMDB, SINGLE_BUTTON, PROTECT_CONTENT, \
-    SPELL_CHECK_REPLY, IMDB_TEMPLATE, IMDB_DELET_TIME, START_MESSAGE, PMFILTER, G_FILTER, BUTTON_LOCK, BUTTON_LOCK_TEXT
+    SPELL_CHECK_REPLY, IMDB_TEMPLATE, IMDB_DELET_TIME, START_MESSAGE, PMFILTER, G_FILTER, BUTTON_LOCK, NOR_IMG, BUTTON_LOCK_TEXT
 
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery
 from pyrogram import Client, filters, enums 
@@ -1623,11 +1623,11 @@ async def auto_filter(client, msg, spoll=False):
             await hmm.delete()            
         except Exception as e:
             logger.exception(e)
-            fek = await message.reply_photo(photo='https://te.legra.ph/file/a007a9e54bee324459613.jpg',caption=cap, reply_markup=InlineKeyboardMarkup(btn))
+            fek = await message.reply_photo(photo=NOR_IMG, caption=cap, reply_markup=InlineKeyboardMarkup(btn))
             await asyncio.sleep(IMDB_DELET_TIME)
             await fek.delete()
     else:
-        fuk = await message.reply_photo(photo='https://te.legra.ph/file/a007a9e54bee324459613.jpg',caption=cap, reply_markup=InlineKeyboardMarkup(btn))
+        fuk = await message.reply_photo(photo=NOR_IMG, caption=cap, reply_markup=InlineKeyboardMarkup(btn))
         await asyncio.sleep(IMDB_DELET_TIME)
         await fuk.delete()        
     if spoll:
@@ -1719,11 +1719,11 @@ async def pm_AutoFilter(client, msg, pmspoll=False):
             await hmm.delete()            
         except Exception as e:
             logger.exception(e)
-            fek = await message.reply_photo(photo='https://te.legra.ph/file/a007a9e54bee324459613.jpg',caption=cap, reply_markup=InlineKeyboardMarkup(btn))
+            fek = await message.reply_photo(photo=NOR_IMG, caption=cap, reply_markup=InlineKeyboardMarkup(btn))
             await asyncio.sleep(IMDB_DELET_TIME)
             await fek.delete()
     else:
-        fuk = await message.reply_photo(photo='https://te.legra.ph/file/a007a9e54bee324459613.jpg',caption=cap, reply_markup=InlineKeyboardMarkup(btn))
+        fuk = await message.reply_photo(photo=NOR_IMG, caption=cap, reply_markup=InlineKeyboardMarkup(btn))
         await asyncio.sleep(IMDB_DELET_TIME)
         await fuk.delete()        
     if pmspoll:
