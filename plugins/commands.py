@@ -253,7 +253,13 @@ async def start(client, message):
         file_id=file_id,
         caption=f_caption,
         protect_content=True if pre == 'filep' else False,
+        reply_markup=InlineKeyboardMarkup(
+           [[
+             InlineKeyboardButton('𝑴𝒐𝒗𝒊𝒆 𝑮𝒓𝒐𝒖𝒑', url="https://t.me/+13GM3oiLFVI0MjE1"),
+             InlineKeyboardButton('𝑼𝒑𝒅𝒂𝒕𝒆𝒔 𝑪𝒉𝒂𝒏𝒏𝒆𝒍', url="https://t.me/CINEMACLUBLINKZ")
+           ]]
         )
+     )
                     
 
 @Client.on_message(filters.command('channel') & filters.user(ADMINS))
