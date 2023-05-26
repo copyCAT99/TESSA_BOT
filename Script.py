@@ -2,8 +2,8 @@ class script(object):
     HELP_TXT = """𝙷𝙴𝚈 {}\n𝙷𝙴𝚁𝙴 𝙸𝚂 𝙼𝚈 𝙷𝙴𝙻𝙿 𝙲𝙾𝙼𝙼𝙰𝙽𝙳𝚂."""
 
     ABOUT_TXT = """<b>๏ 𝑴𝒚 𝑵𝒂𝒎𝒆 : {}
-๏ 𝑪𝒓𝒆𝒂𝒕𝒐𝒓 : <a href=https://t.me/DQ1>ᴛʜɪs ᴘᴇʀsᴏɴ</a>
-๏ 𝑫𝒆𝒗𝒆𝒍𝒐𝒑𝒆𝒓 : <a href=https://t.me/DQ12335>𒆜ᴍʀ ᴋᴅ [ᴏғғɪᴄɪᴀɪʟ] 🇮🇳</a>
+๏ 𝑪𝒓𝒆𝒂𝒕𝒐𝒓 : <a href=tg://settings>ᴛʜɪs ᴘᴇʀsᴏɴ</a>
+๏ 𝑫𝒆𝒗𝒆𝒍𝒐𝒑𝒆𝒓 : <a href=https://t.me/MalluBlasters>𒆜 CopyCAT [#Offline]🇮🇳</a>
 ๏ 𝑳𝒊𝒃𝒓𝒂𝒓𝒚 : 𝑷𝒚𝒓𝒐𝒈𝒓𝒂𝒎
 ๏ 𝑳𝒂𝒏𝒈𝒖𝒂𝒈𝒆 : 𝑷𝒚𝒕𝒉𝒐𝒏 3
 ๏ 𝑫𝒂𝒕𝒂 𝑩𝒂𝒔𝒆 : 𝑴𝒐𝒏𝒈𝒐 𝑫𝑩
