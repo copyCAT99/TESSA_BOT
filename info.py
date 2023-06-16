@@ -28,7 +28,7 @@ CACHE_TIME = int(environ.get('CACHE_TIME', 9999))
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', True))
 PICS = (environ.get('PICS' ,'https://telegra.ph/file/79bd83439254ed9c4bbca.jpg')).split()
 SPELL_IMG = environ.get('SPELL_IMG', "https://telegra.ph/file/80dcffebb47e116a65758.jpg")
-CLOSE_IMG = environ.get('CLOSE_IMG', "
+CLOSE_IMG = environ.get('CLOSE_IMG', "https://te.legra.ph/file/b54f74036058067bb9e68.jpg")
 BOT_START_TIME = time()
 
 
