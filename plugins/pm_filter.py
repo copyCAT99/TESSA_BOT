@@ -269,9 +269,9 @@ async def advantage_spoll_choker(bot, query):
             k = (movie, files, offset, total_results)
             await auto_filter(bot, query, k)
         else:
-            thega=await message.reply_photo(
+            k = await message.reply_photo(
             photo=random.choice(CLOSE_IMG),
-            caption=f"⚙️ {message.from_user.mention} Fɪʟᴛᴇʀ Fᴏʀ {search} Cʟᴏꜱᴇᴅ 🗑️')
+            caption=f'⚙️ {message.from_user.mention} Fɪʟᴛᴇʀ Fᴏʀ {search} Cʟᴏꜱᴇᴅ 🗑️')
             await asyncio.sleep(10)
             await k.delete()
 
