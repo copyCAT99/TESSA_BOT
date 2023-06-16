@@ -269,9 +269,7 @@ async def advantage_spoll_choker(bot, query):
             k = (movie, files, offset, total_results)
             await auto_filter(bot, query, k)
         else:
-            k = await message.reply_photo(
-                photo=random.choice(CLOSE_IMG),
-                caption=f'⚙️ {message.from_user.mention} Fɪʟᴛᴇʀ Fᴏʀ {search} Cʟᴏꜱᴇᴅ 🗑️')
+            k = await query.message.reply_photo(photo=CLOSE_IMG, caption='This Movie Not Found In DataBase')
             await asyncio.sleep(10)
             await k.delete()
 
@@ -291,9 +289,7 @@ async def pm_spoll_tester(bot, query):
         k = (movie, files, offset, total_results)
         await pm_AutoFilter(bot, query, k)
     else:
-        k = await message.reply_photo(
-            photo=random.choice(CLOSE_IMG),
-            caption=f'⚙️ {message.from_user.mention} Fɪʟᴛᴇʀ Fᴏʀ {search} Cʟᴏꜱᴇᴅ 🗑️')
+        k = await query.message.reply_photo(photo=CLOSE_IMG, caption='This Movie Not Found In DataBase')
         await asyncio.sleep(10)
         await k.delete()
 
